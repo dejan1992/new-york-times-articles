@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+.title{
+  margin-top: 0rem;
+  margin: auto;
+  width: 30%;
+  height: 130px;
+  background: url(New_york_times_logo_PNG1.png) no-repeat center center/cover;
+  justify-content: center;
+}
+
+#title{
+  text-align: center;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.line{
+  background-color: #333;
+  width:50%;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+#search-word {
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+}
+
+#search-input{
+  display: block;
+  margin: 1rem auto;
+  margin-top: 0.5rem;
+  padding: 15px;
+  height: 20px;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+#option-input{
+  display: block;
+  margin: 1rem auto;
+  margin-top: 0.5rem;
+  padding: 5px;
+  height: 20px;
+  width: 95%;
+  border: 1px solid #333;
+  border-radius: 5px;
+ box-sizing: unset;
+}
+
+.btn{
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 8px 0px;
+  background-color:#333;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color:rgb(70, 70, 70);
+  transform: scale(0.98);
+}
+
+ .btn-secundary{
+   display: inline-block;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px 7px;
+
+} 
+
+.btn-secundary:hover{
+  cursor: pointer;
+  transform: scale(0.98);
+
+}
+
+form{
+  margin: 0 auto;
+  width: 250px;
+  border-radius: 5px;
+}
+
+#loading{
+display: none;
+text-align: center;
+width: 80%;
+margin: auto;
+}
+#loading img{
+  width: 150px;
+}
+
+/* articles */
+
+#results-text{
+  text-align: center;
+  margin-top: 2rem;
+}
+.articles{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  justify-content: center;
+  align-items: top;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  /* height: 100%; */
+}
+
+.articles .article{
+background-color: rgb(241, 241, 241);
+padding: 1.5rem;
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.12);
+transition: all 0.3s ease-in-out;
+border: 1px solid rgb(223, 221, 221);
+border-radius: 5px;
+}
+
+.articles .article h1{
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+.articles .article p{
+  margin-bottom: 1rem;
+}
+
+.date{
+  color: rgb(255, 255, 255);
+  background: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 2px 0;
+  border-radius: 5px;
+  width: 100px;
+}
+
+footer{
+  position: absolute;
+  top: 100%;
+
+  width: 100%;
+  text-align: center;
+  padding:10px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px ;
+}
+
+/* Media query*/
+
+@media(max-width: 1400px){
+  .articles{
+    grid-template-columns: repeat(2, 1fr);
+}
+.title{
+  width: 500px;
+  height: 90px;
+  margin-top: 1rem;
+}
+
+}
+@media(max-width: 850px){
+  .articles{
+    grid-template-columns: 1fr;
+}
+.title{
+  width: 300px;
+  height: 90px;
+  margin-top: 1rem;
+}
+}
